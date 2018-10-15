@@ -9,7 +9,7 @@ function nestedTarget() {
 function deepestChild() {
   let currentNode = document.querySelector('#grand-node');
   while(currentNode.querySelector('children')) {
-    currentNode = currentNode.querySelectorAll('children')[0];
+    currentNode = currentNode.querySelector('children')[0];
   }
   return currentNode;
 }
