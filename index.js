@@ -8,7 +8,7 @@ function nestedTarget() {
 
 function deepestChild() {
   let currentNode = document.querySelector('#grand-node');
-  while(currentNode.children) {
+  while(currentNode.children.length !== 0) {
     currentNode = currentNode.children[0];
   }
   return currentNode;
