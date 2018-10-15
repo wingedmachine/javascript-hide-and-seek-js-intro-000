@@ -13,3 +13,7 @@ function deepestChild() {
   }
   return currentNode;
 }
+
+function increaseRankBy(n) {
+  return document.querySelectorAll('.ranked-list');
+}
