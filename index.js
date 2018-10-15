@@ -16,7 +16,7 @@ function deepestChild() {
 
 function increaseRankBy(n) {
   let ranks = document.querySelector('.ranked-list li');
-  console.log(ranks);
+  console.log(ranks.innerHtml);
   ranks.innerHtml = 'test';
   for(let i = 0; i < ranks.length; i++) {
     //(parseInt(ranks[i].innerHtml) + n).toString();
