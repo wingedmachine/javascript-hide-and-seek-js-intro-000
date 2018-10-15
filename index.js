@@ -20,7 +20,7 @@ function increaseRankBy(n) {
     .querySelectorAll('ul.ranked-list li');
 
   for (let i = 0; i < lis.length; i++) {
-    lis[i].innerHTML = (i + 1).toString();
+    lis[i].innerHTML = (i + 2).toString();
   }
   //const ranks = document.querySelectorAll('.ranked-list li');
   //console.log(ranks[0]);
