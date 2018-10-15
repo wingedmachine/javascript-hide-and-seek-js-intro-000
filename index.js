@@ -15,16 +15,13 @@ function deepestChild() {
 }
 
 function increaseRankBy(n) {
-  const lis = document.querySelectorAll('.ranked-list li');
-
-  for (let i = 0; i < lis.length; i++) {
-    lis[i].innerHTML = (i + 2).toString();
-  }
-  //const ranks = document.querySelectorAll('.ranked-list li');
-  //console.log(ranks[0]);
-  //ranks[0].innerHtml = 'test';
-  //ranks.innerHtml = 'test';
-  //for(let i = 0; i < ranks.length; i++) {
-  //  (parseInt(ranks[i].innerHtml) + n).toString();
+  //const lis = document.querySelectorAll('.ranked-list li');
+  //for (let i = 0; i < lis.length; i++) {
+  //  lis[i].innerHTML = (i + 2).toString();
   //}
+  
+  const ranks = document.querySelectorAll('.ranked-list li');
+  for(let i = 0; i < ranks.length; i++) {
+    (parseInt(ranks[i].innerHTML) + n).toString();
+  }
 }
